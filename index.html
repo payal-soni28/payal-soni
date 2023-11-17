@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Portfolio" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/fa62c117c7.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="styles.css" />
+    <title>Payal soni</title>
+  </head>
+  <body class="light" id="top">
+    <header class="header center">
+
+      <nav class="nav center">
+        <ul class="nav__list center">
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#projects">Projects</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#skills">Skills</a>
+          </li>
+          <li class="nav__list-item">
+            <a class="link link--nav" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <button type="button" aria-label="toggle theme" class="btn btn--icon">
+          <i aria-hidden="true" id="btn-theme" class="fas fa-moon"></i>
+        </button>
+
+        <button
+          type="button"
+          aria-label="toggle navigation"
+          class="btn btn--icon nav__hamburger"
+        >
+          <i aria-hidden="true" class="fas fa-bars"></i>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- About -->
+      <div class="about center">
+        <h1>Hi, I am <span class="about__name">Payal Soni</span></h1>
+        <p class="about__desc">
+          I am a passionate data enthusiast with a strong skill set in data analysis, machine learning, and data visualization.
+          Experienced in extracting, transforming, and uncovering valuable insights from data 
+          using Python, its libraries, as well as SQL and other advanced technologies.
+        </p>
+        <h3 class="about__role">Data Analytics • Data Visualization</h3><br>
+        <h4>
+          <i aria-hidden="true" class="fa fa-line-chart"></i>
+           •
+           <i aria-hidden="true" class="fa fa-bar-chart"></i>
+           •
+           <i aria-hidden="true" class="fa fa-pie-chart"></i>
+           •
+           <i aria-hidden="true" class="fa fa-area-chart"></i>
+          </h4>
+
+
+        <div class="about__contact center">
+          <a href="https://1drv.ms/b/s!AiOEHY6-kDNBgztmx5N13YSqEwB7?e=8QJElq">
+            <span class="btn btn--outline">Resume</span>
+          </a>
+
+          <a
+            href="https://github.com/payal-soni28"
+            aria-label="github"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-github"></i>
+          </a>
+
+          <a
+            href="https://issuu.com/payal28anand/docs/resume-psa"
+            aria-label="linkedin"
+            class="link link--icon"
+          >
+            <i aria-hidden="true" class="fab fa-linkedin"></i>
+          </a>
+        </div>
+      </div>
+
+      <!-- Projects -->
+      <section id="projects" class="section projects">
+        <h2 class="section__title">Projects</h2>
+
+        <div class="projects__grid">
+          <div class="project">
+            <h3>Disaster Tweets Classification</h3>
+            <p class="">
+              Developed a machine learning model to classify tweets as either related to real disasters or not.
+             Leveraged a dataset from Kaggle's NLP Getting Started Competition.
+             The ensemble model, combining Multinomial Naive Bayes, Logistic Regression, and Support Vector Machine classifiers.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">python</li>
+              <li class="project__stack-item">sci_kit learn</li>
+              <li class="project__stack-item">jupyter</li>
+              <li class="project__stack-item">NLTK</li>
+            </ul>
+
+            <a
+              href="https://github.com/payal-soni28/NLP-with-Disaster-Tweets"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://github.com/payal-soni28/NLP-with-Disaster-Tweets/blob/main/tweets_pred.ipynb"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>SQL Data Analysis</h3>
+            <p class="">
+              This project involves conducting a comprehensive Exploratory Data Analysis (EDA) on the Zomato Restaurant Dataset, sourced 
+              from the popular online food delivery platform Zomato. The primary objective is to gain insights into 
+              various aspects of the dataset, including restaurant ratings, services offered (online orders and table bookings), and cost analysis.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">SQL</li>
+              <li class="project__stack-item">MySQL</li>
+            </ul>
+
+            <a
+              href="https://github.com/payal-soni28/SQL_data_analysis"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+
+          <div class="project">
+            <h3>Twitter Sentiment analysis</h3>
+            <p class="">
+              Sentiment analysis, a crucial aspect of Natural Language Processing (NLP), is employed to discern sentiments expressed in text.
+               This project contributes to Twitter's efforts to combat platform misuse by creating a robust NLP-based classifier,
+                aiming to identify and address negative tweets effectively.
+            </p>
+            <ul class="project__stack">
+              <li class="project__stack-item">Python</li>
+              <li class="project__stack-item">Jupyter</li>
+              <li class="project__stack-item">Scikit-learn</li>
+              <li class="project__stack-item">nltk</li>
+            </ul>
+
+            <a
+              href="https://github.com/payal-soni28/Twitter-Sentiment-analysis"
+              aria-label="source code"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fab fa-github"></i>
+            </a>
+            <a
+              href="https://example.com"
+              aria-label="live preview"
+              class="link link--icon"
+            >
+              <i aria-hidden="true" class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section class="section skills" id="skills">
+        <h2 class="section__title">Skills</h2>
+        <ul class="skills__list">
+          <li class="skills__list-item btn btn--plain">Python</li>
+          <li class="skills__list-item btn btn--plain">SQL</li>
+          <li class="skills__list-item btn btn--plain">Scikit-learn</li>
+          <li class="skills__list-item btn btn--plain">TensorFlow</li>
+          <li class="skills__list-item btn btn--plain">Keras</li>
+          <li class="skills__list-item btn btn--plain">NLTK</li>
+          <li class="skills__list-item btn btn--plain">Power BI</li>
+          <li class="skills__list-item btn btn--plain">Tableau</li>
+
+        </ul>
+      </section>
+
+      <!-- Contact -->
+      <section class="section contact center" id="contact">
+        <h2 class="section__title">Contact</h2>
+        <a href="mailto:payal28anand@gmail.com">
+          <span class="btn btn--outline">Email me</span>
+        </a>
+      </section>
+    </main>
+
+    <!-- Apply space between classes -->
+<div class="center margin-bottom">
+  <!-- your content -->
+</div>
+
+<!-- Apply padding at the end -->
+<div class="padding-at-the-end"></div>
+
+<!-- Apply padding to specific elements -->
+<div class="project padding-bottom">
+  <!-- your project content -->
+</div>
+
+    <div class="scroll-container">
+    <div class="scroll-top">
+      <a aria-label="Scroll up" href="#top">
+        <i aria-hidden="true" class="fas fa-arrow-up"></i>
+      </a>
+    </div>
+    </div>
+
+    <script src="./script.js"></script>
+    <footer>
+      <small>
+          Portfolio Template By <a href="https://github.com/rajshekhar26/cleanfolio-minimal" target="_blank">Raj Shekhar</a>
+      </small>
+  </footer>
+
+  </body>
+</html>
